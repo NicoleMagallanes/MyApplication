@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
@@ -42,7 +41,7 @@ class SignUpActivity : AppCompatActivity() {
             }
         }
         binding.btnSignup.setOnClickListener{
-            val intent = Intent(this@SignUpActivity, SignUpActivity::class.java)
+            val intent = Intent(this@SignUpActivity, ProfileActivity::class.java)
             startActivity(intent)
         }
     }

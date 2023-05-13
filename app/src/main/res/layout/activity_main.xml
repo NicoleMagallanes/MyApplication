@@ -6,110 +6,112 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="34dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:orientation="vertical"
+        android:padding="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/cream_light"
 
-    <TextView
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="157dp"
+            android:layout_height="151dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="167dp"
+            tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="187dp"
+            android:layout_height="39dp"
+            android:text="Code 101"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="112dp"
+            tools:layout_editor_absoluteY="313dp"
+            android:layout_gravity="center"/>
+
+        <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activities"
         android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="219dp" />
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="351dp"
+            android:layout_gravity="center"/>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="187dp"
-        android:layout_height="39dp"
-        android:text="Code 101"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="180dp" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:text="Email"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="401dp" />
 
-    <EditText
-        android:id="@+id/Password_Box"
-        android:layout_width="298dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="389dp" />
+        <EditText
+            android:id="@+id/Email_Box"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="431dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="298dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#b1b3b1"
-        android:text="Sign Up"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="599dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="502dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="298dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#b1b3b1"
-        android:text="Log In"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="469dp" />
+        <EditText
+            android:id="@+id/Password_Box"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="522dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="298dp"
-        android:layout_height="51dp"
-        android:backgroundTint="@color/white"
-        android:text="Don't have an account?"
-        android:textColor="@color/black"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="533dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#b1b3b1"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="732dp" />
 
-    <EditText
-        android:id="@+id/Email_Box"
-        android:layout_width="298dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="298dp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="320dp"
+            android:layout_height="51dp"
+            android:backgroundTint="@color/white"
+            android:text="Don't have an account?"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="666dp" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="369dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="65dp"
-        android:layout_height="30dp"
-        android:text="Email"
-        android:textSize="20sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="268dp" />
-
+        <Button
+            android:id="@+id/button"
+            android:layout_width="320dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#b1b3b1"
+            android:text="Log In"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="602dp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
